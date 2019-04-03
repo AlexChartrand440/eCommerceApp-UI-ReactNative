@@ -1,7 +1,7 @@
 
 
 import React, { Component } from 'react';
-import { View, StatusBar, StyleSheet } from 'react-native';
+import { View, StatusBar, StyleSheet, AsyncStorage } from 'react-native';
 import firebase from 'firebase'; //Objects are not valid as react child was due to firebase version use  --npm install --save firebase@5.0.3 --
 import { connect } from 'react-redux';
 import AuthNav from './src/routes/AuthRoute';
@@ -16,18 +16,42 @@ class App extends Component {
     this.state = {
       loading: true,
       authentication: false,
+      tokenReceived: false
     };
     if (!firebase.apps.length) {
       firebase.initializeApp(FirebaseConfig);
     }
   }
 
+  componentWillMount = () => {
+    { this.getToken() }
+  }
+
+  getToken = async () => {
+    try {
+      const value = await AsyncStorage.getItem('userToken');
+      if (value !== null) {
+        this.setState({ tokenReceived: true })
+        console.log('Token from Aysnc Storage ', value);
+      }
+    } catch (error) {
+      console.log('Token from Aysnc Storage No');
+    }
+  }
+
+  componentDidUpdate = () => {
+    console.log('Log my nigger out')
+  }
+
   render() {
-    console.log('print access ', this.props.access, '  this is for spinner ', this.props.spinner)
     return (
       <View style={styles.container}>
         <StatusBar backgroundColor="black" barStyle="light-content" />
-        {!this.props.access ? <AuthNav /> : <MainNav />}
+        {this.state.tokenReceived ? <MainNav /> : this.props.access ? <MainNav /> : <AuthNav />}
+
+        {/* {this.state.tokenReceived ? <MainNav /> : <AuthNav />}
+        {this.props.access ? <MainNav /> : <AuthNav />} */}
+        {console.log('token received boolean ', this.state.tokenReceived)}
       </View>
     );
   }

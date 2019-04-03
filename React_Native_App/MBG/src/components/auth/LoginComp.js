@@ -45,7 +45,6 @@ class loginForm extends Component {
 
 
 	render() {
-		console.log('from comp login ', this.props.email)
 		return (
 			<Card>
 				<CardSection>
@@ -113,7 +112,6 @@ const styles = StyleSheet.create({
 });
 
 const mapStateToProps = (state) => {
-	console.log('from login comp ', state)
 	return {
 		email: state.auth.email,
 		password: state.auth.password,

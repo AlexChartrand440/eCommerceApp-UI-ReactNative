@@ -1,21 +1,17 @@
 import React, { Component } from 'react';
+import { Text } from 'react-native';
 import { connect } from 'react-redux';
 import { Button, Card, CardSection } from '../../components/common';
-// import { logoutUser } from '../../actions/AuthAction';
+import { logoutUser } from '../../actions/AuthAction';
 
 
 class SettingScreen extends Component {
 
-    logoutUser1 = () => {
-        // this.props.logoutUser()
-    }
     render() {
         return (
-            <Card>
-                <CardSection>
-                    <Button title='Logout' onPress={this.logoutUser1} />
-                </CardSection>
-            </Card>
+            <CardSection>
+                <Button title='Logout' onPress={this.props.logoutUser} />
+            </CardSection>
         )
     }
 }
@@ -27,7 +23,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        // logoutUser: () => dispatch(logoutUser())
+        logoutUser: () => dispatch(logoutUser())
     }
 }
 

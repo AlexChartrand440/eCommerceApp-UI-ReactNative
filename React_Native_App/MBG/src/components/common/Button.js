@@ -19,13 +19,15 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#3cff00',
         marginTop: 10,
-        
     },
+
     buttonText: {
-        color: '#000000',
+        alignSelf: 'center',
+        color: '#336633',
         fontSize: 19,
-        textAlign: 'center'
-    }
+        fontWeight: '600',
+    },
+
 });
 
 export default Button;

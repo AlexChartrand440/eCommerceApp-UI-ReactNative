@@ -11,8 +11,8 @@ class HomeScreen extends Component {
         this.state = {
 
         }
-
     }
+
 
     setToken = () => {
         const { token } = this.props

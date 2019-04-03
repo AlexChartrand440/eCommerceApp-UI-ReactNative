@@ -1,13 +1,43 @@
 import React from 'react';
-import { createMaterialTopTabNavigator, createAppContainer } from 'react-navigation';
+import { createMaterialTopTabNavigator, createAppContainer, createStackNavigator } from 'react-navigation';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-import SearchScreen from '../screens/user/SearchScreen';
-import SettingScreen from '../screens/user/SettingScreen';
-import HomeScreen from '../screens/user/HomeScreen';
-import NotificationScreen from '../screens/user/NotificationScreen';
-import WalletScreen from '../screens/user/WalletScreen';
-import ProfileScreen from '../screens/user/ProfileScreen';
+import {
+    EditProfileScreen, SearchScreen, SettingScreen, HomeScreen,
+    NotificationScreen, WalletScreen, ProfileScreen
+} from '../screens/user'
+
+const ProfileStack = createStackNavigator({
+    profile: {
+        screen: ProfileScreen,
+        navigationOptions: {
+            header: null
+        }
+    },
+    editProfile: {
+        screen: EditProfileScreen,
+        navigationOptions: () => ({
+            title: 'Edit Profile',
+            // headerLeft: { onPress =() => { this.props.navigation.goback() } },
+            // headerLeft: null,
+            headerStyle: { backgroundColor: '#656565', elevation: 0 },
+            titleStyle: {
+                textAlign: 'center'
+            },
+
+        })
+    },
+}, {
+        initialRouteName: 'profile',
+        headerMode: 'screen',
+        cardStyle: { backgroundColor: '#656565' },
+        navigationOptions: {
+            tabBarIcon: ({ tintColor }) => (
+                <Icon name="ios-contact" color={tintColor} size={28} />
+            )
+        }
+    })
+
 
 const bottomTab = createMaterialTopTabNavigator({
     home: {
@@ -19,12 +49,13 @@ const bottomTab = createMaterialTopTabNavigator({
         }
     },
     profile: {
-        screen: ProfileScreen,
-        navigationOptions: {
-            tabBarIcon: ({ tintColor }) => (
-                <Icon name="ios-contact" color={tintColor} size={28} />
-            )
-        }
+        screen: ProfileStack
+        // screen: ProfileScreen,
+        // navigationOptions: {
+        //     tabBarIcon: ({ tintColor }) => (
+        //         <Icon name="ios-contact" color={tintColor} size={28} />
+        //     )
+        // }
     },
     wallet: {
         screen: WalletScreen,

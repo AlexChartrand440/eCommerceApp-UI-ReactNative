@@ -5,11 +5,11 @@ import firebase from 'firebase';
 import RNFetchBlob from 'react-native-fetch-blob'
 import { connect } from 'react-redux';
 
-import Button from '../../components/common/Button';
-import ProfilePicture from '../../components/common/EditProfilePicture';
+import { Button, EditProFilePicture } from '../../components/common';
 
 
 const options = {
+    maxWidth: 150, maxHeight: 150,
     takePhotoButtonTitle: 'Open Camera',
     chooseFromLibraryButtonTitle: 'Select from Gallery',
 }
@@ -85,15 +85,15 @@ class Profile extends Component {
     }
 
     editProfile = () => {
-        { this.props.navigation.navigate('noti') }
+        { this.props.navigation.navigate('editProfile') }
     }
 
-
     render() {
+        console.log('re-render')
         return (
             <View style={styles.container}>
                 <View style={styles.header}></View>
-                <ProfilePicture source={this.state.fetchDP} onPress={this.editPicture} />
+                <EditProFilePicture source={this.state.fetchDP} onPress={this.editPicture} />
                 <View style={styles.body}>
                     <View style={styles.bodyContent}>
 
@@ -104,7 +104,7 @@ class Profile extends Component {
                     </View>
                 </View>
                 <View style={styles.buttonContainer}>
-                    <Button title={'Edit'} onPress={this.props.navigation.navigate('noti')} />
+                    <Button title={'Edit'} onPress={this.editProfile} />
                 </View>
             </View>
         );

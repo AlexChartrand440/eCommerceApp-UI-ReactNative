@@ -14,21 +14,19 @@ const AuthReducer = (state = initialState, action) => {
 	console.log('all the actions');
 	console.log(action);
 	switch (action.type) {
-		case actionTypes.EMAIL_CHANGED:
-			return { ...state, email: action.payload };
-
-		case actionTypes.PASSWORD_CHANGED:
-			return { ...state, password: action.payload };
 
 		case actionTypes.LOGIN_REQUEST:
 			return { ...state, spinner: true, access: false };
 
 		case actionTypes.LOGIN_SUCCESS:
-			console.log('Reducer login', action.payload)
-			return { ...state, access: true, spinner: false, email: action.payload.user.email, user: action.payload };
+			console.log('Reducer login', action.payload.user)
+			return { ...state, userToken: action.payload.user.uid, access: true, spinner: false, email: action.payload.user.email, user: action.payload };
+
+		case actionTypes.LOGOUT:
+			return { ...state, access: false }
 
 		case actionTypes.REGISTER_SUCCESS:
-			console.log('Reducer Register', action.payload)
+			console.log('Reducer Register', action.payload.user)
 			return { ...state, email: action.payload.user.email, spinner: false, access: false, user: action.payload };
 
 		case actionTypes.RESET_PASSWORD_SUCCESS:

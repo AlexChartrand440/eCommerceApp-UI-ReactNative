@@ -21,6 +21,14 @@ export const loginUser = ({ email, password }) => {
 	};
 };
 
+export const logoutUser = () => {
+	return (dispatch) => {
+		firebase.auth().signOut;
+		AsyncStorage.removeItem('userToken')
+		dispatch({ type: actionTypes.LOGOUT })
+	}
+}
+
 export const registerRequest = (userData) => {
 	return (dispatch) => {
 		dispatch({ type: actionTypes.LOGIN_REQUEST })
