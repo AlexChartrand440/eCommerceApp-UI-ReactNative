@@ -1,0 +1,31 @@
+{
+  "name": "MyShop35",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "native-base": "2.7.2",
+    "react": "16.8.3",
+    "react-native": "0.59.5",
+    "react-native-drawer": "^2.5.0",
+    "react-native-image-gallery": "2.1.5",
+    "react-native-maps": "github:react-native-community/react-native-maps#master",
+    "react-native-router-flux": "^4.0.6",
+    "react-native-snap-carousel": "3.7.2",
+    "react-native-vector-icons": "^6.4.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.3",
+    "@babel/runtime": "7.4.3",
+    "babel-jest": "24.7.1",
+    "jest": "24.7.1",
+    "metro-react-native-babel-preset": "0.53.1",
+    "react-test-renderer": "16.8.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
