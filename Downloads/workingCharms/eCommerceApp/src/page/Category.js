@@ -28,20 +28,20 @@ export default class Category extends Component {
   componentWillMount() {
     var products = [
       {
-        id: 1, title: 'Suit', categoryId: 5, categoryTitle: 'MEN', price: '250',
+        id: 1, title: 'Suits', categoryId: 5, categoryTitle: 'MEN', price: '250',
         image: 'https://cdn.pixabay.com/photo/2017/01/14/10/03/fashion-1979136_1280.jpg',
         description: "Suit up like the sleek professional you are in our Suit. Crafted from breathable Wool, this Classic piece is cut to our moderately tapered Drop 7 block.The half-canvas jacket is fully lined with a Prince of Wales pattern,  front pocket flaps, a welt pocket at the chest, notch lapel, 2-button closure and non-working buttons at cuff. The trousers also feature a check pattern and belt loops.",
         images: [
           'http://www.jbsuits.com/product_images/j/543/gray-three-piece-suit__64745_zoom.jpg',
           'http://www.asiasuits.com/wp-content/uploads/2018/03/OSCN7-Double-Breasted-Suit-Men-Slim-Fit-Leisure-Office-Formal-Black-Suit-Pants.jpg',
-          'https://motharyor.com/wp-content/uploads/2017/07/Mothayor-147.jpg',
+          'https://www.politix.com.au/dw/image/v2/ABBA_PRD/on/demandware.static/-/Sites-politix-master-catalog/default/dw48f31653/images/hires/Summer19/VZ31T_New_Blue_1.jpg?sw=600&sh=600&sm=fit'
         ],
-        colors: ['Grey', 'Blue', 'Black'],
+        colors: ['Grey', 'Black', 'Blue'],
         sizes: ['S', 'M', 'L', 'XL', 'XXL'],
         category: 'MAN'
       },
       {
-        id: 2, title: 'Wrist Watch', categoryId: 2, categoryTitle: 'WOMEN', price: '90',
+        id: 2, title: 'Wrist Watches', categoryId: 2, categoryTitle: 'WOMEN', price: '90',
         image: 'https://cdn.pixabay.com/photo/2016/11/29/13/39/analog-watch-1869928_1280.jpg',
         description: "Bering Max Rene 32mm Silicon Strap Polished Case, Strap, 50 meter Water Resistant with Saphire Crystal Glass",
         images: [
@@ -69,7 +69,7 @@ export default class Category extends Component {
       {
         id: 15, title: 'Ladies Purse', categoryId: 5, categoryTitle: 'WOMEN', price: '35',
         image: 'https://cdn.pixabay.com/photo/2014/07/11/20/49/purse-390345_1280.jpg',
-        description: "Hello there, i'm a cool product with a heart of gold.",
+        description: "A slim and practical choice, this genuine leather wallet features a bi-fold design with a luxe, pebbled finish. The wallet fastens with a single button strap, opening to multiple compartments for your cash, cards and receipts. \n- 100% Leather\n- Bi-fold design\n- Pebbled finish- Foiled logo",
         images: [
           'https://www.davidjones.com/productimages/medium/1/1883969_18432810_1300050.jpg',
           'https://www.davidjones.com/productimages/medium/1/1873313_18321303_1301267.jpg',
@@ -93,7 +93,7 @@ export default class Category extends Component {
         category: 'KIDS',
       },
       {
-        id: 22, title: 'Women Sweaters', categoryId: 2, categoryTitle: 'WOMEN', price: '66',
+        id: 22, title: 'Womens Sweaters', categoryId: 2, categoryTitle: 'WOMEN', price: '66',
         image: 'https://img.chiccdn.com/thumb/large/oaupload/yoins/images/AB/CE/333bf55f-90e6-478d-9a84-3115639f0beb.jpeg',
         description: "Summer nights often call for a little sweater, and this is most definitely it. \n-Front button closure  \n-Collarless  \n-75% pima cotton, 25% viscose  \n-Machine wash, dry flat",
         images: [
@@ -119,7 +119,7 @@ export default class Category extends Component {
         category: 'MEN'
       },
       {
-        id: 12, title: 'Women Sandal', categoryId: 5, categoryTitle: 'WOMEN', price: '30',
+        id: 12, title: 'Womens Sandal', categoryId: 5, categoryTitle: 'WOMEN', price: '30',
         image: 'http://www.famousfootwear.com.au/media/products/LPGETAWAY.BLK_1.jpg',
         description: "Flat sandal featuring two buckled straps and a cork effect footbed. Perfect for café catch ups with the girls, team Getaway with a fun floral dress and denim jacket for your next coffee date.",
         images: [
@@ -150,9 +150,9 @@ export default class Category extends Component {
         image: 'https://ae01.alicdn.com/kf/HTB1GOj8MpXXXXXFXpXXq6xXFXXX4/Anime-God-stole-Dad-kids-Cap-European-American-Cap-Children-cap-yellow-Snapback-Hip-hop-Caps.jpg_640x640.jpg',
         description: "Different cartoon featured caps for adulta and kids with different designs and patterns   \n-Fortnite  \n-Spiderman    \n-Batman",
         images: [
-          'https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjNxp_vgvXhAhXKF3IKHR8WDHoQjRx6BAgBEAU&url=https%3A%2F%2Fposhmark.com%2Flisting%2FFORTNITE-GALAXY-HAT-5c44d74cc9bf507d51748082&psig=AOvVaw19LGISKouuK422Lgkn7veu&ust=1556617658286520',
+          'https://fortnitenut.com/wp-content/uploads/2018/08/622487079-1.jpg',
           'https://image.dhgate.com/0x0/f2/albu/g5/M01/B0/39/rBVaJFlp06mAb6pfAADMAVr1k0Q189.jpg',
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu5IrCzD5t9ipg4qxI1zQLM9YXtZUGzIWH7I9peGKTA-0b_zDH'
+          'https://hip-hop-shop.supremestyle.eu/sub/hip-hop-shop.supremestyle.eu/shop/product/resized/kids-new-era-9fifty-child-batman-character-outline-enfant-noire-53426.thumb_600x600.jpg?t=1518608402'
         ],
         colors: ['Fortnite', 'Spiderman', 'Batman'],
         sizes: ['S', 'M', 'L'],

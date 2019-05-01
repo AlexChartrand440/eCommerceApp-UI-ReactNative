@@ -70,7 +70,7 @@ export default class WishList extends Component {
             <Text style={{ fontSize: 18 }}>
               {item.title}
             </Text>
-            <Text style={{ fontSize: 16, fontWeight: 'bold', marginBottom: 10 }}>{item.price}</Text>
+            <Text style={{ fontSize: 16, fontWeight: 'bold', marginBottom: 10 }}>${item.price}</Text>
             <Text style={{ fontSize: 14, fontStyle: 'italic' }}>{item.category}</Text>
           </Body>
           <Right>

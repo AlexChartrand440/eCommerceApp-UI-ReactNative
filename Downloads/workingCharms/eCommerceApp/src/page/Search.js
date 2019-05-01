@@ -96,7 +96,7 @@ export default class Search extends Component {
   search(text) {
     var searchResult = [
       {
-        id: 1, title: 'Suit', categoryId: 5, categoryTitle: 'MEN', price: '$250',
+        id: 1, title: 'Suit', categoryId: 5, categoryTitle: 'MEN', price: '250',
         image: 'https://cdn.pixabay.com/photo/2017/01/14/10/03/fashion-1979136_1280.jpg',
         description: "Suit up like the sleek professional you are in our Suit. Crafted from breathable Wool, this Classic piece is cut to our moderately tapered Drop 7 block.The half-canvas jacket is fully lined with a Prince of Wales pattern,  front pocket flaps, a welt pocket at the chest, notch lapel, 2-button closure and non-working buttons at cuff. The trousers also feature a check pattern and belt loops.",
         images: [
@@ -114,7 +114,7 @@ export default class Search extends Component {
         ]
       },
       {
-        id: 2, title: 'Wrist Watch', categoryId: 2, categoryTitle: 'WOMEN', price: '$90',
+        id: 2, title: 'Wrist Watch', categoryId: 2, categoryTitle: 'WOMEN', price: '90',
         image: 'https://cdn.pixabay.com/photo/2016/11/29/13/39/analog-watch-1869928_1280.jpg',
         description: "Bering Max Rene 32mm Silicon Strap Polished Case, Strap, 50 meter Water Resistant with Saphire Crystal Glass",
         images: [
@@ -132,7 +132,7 @@ export default class Search extends Component {
         ]
       },
       {
-        id: 10, title: 'Converse Shoes', categoryId: 1, categoryTitle: 'WOMEN', price: '$82',
+        id: 10, title: 'Converse Shoes', categoryId: 1, categoryTitle: 'WOMEN', price: '82',
         image: 'https://cdn.pixabay.com/photo/2016/11/18/22/35/all-star-1837189_1280.jpg',
         description: "These Chuck Taylor All Star high top sneakers are a spin off a classic. It doesn’t get much tougher than the premium leather upper with glam accents like patent leather and shiny lace. The chic feel continues inside with an OrthoLite insole for cushioning, so you can keep your style on 100 all day long.",
         images: [
@@ -150,7 +150,7 @@ export default class Search extends Component {
         ]
       },
       {
-        id: 15, title: 'Ladies Purse', categoryId: 5, categoryTitle: 'WOMEN', price: '$35',
+        id: 15, title: 'Ladies Purse', categoryId: 5, categoryTitle: 'WOMEN', price: '35',
         image: 'https://cdn.pixabay.com/photo/2014/07/11/20/49/purse-390345_1280.jpg',
         description: "Hello there, i'm a cool product with a heart of gold.",
         images: [
@@ -168,7 +168,7 @@ export default class Search extends Component {
         ]
       },
       {
-        id: 11, title: 'Fur Vest Kids', categoryId: 5, categoryTitle: 'KIDS', price: '$80',
+        id: 11, title: 'Fur Vest Kids', categoryId: 5, categoryTitle: 'KIDS', price: '80',
         image: 'https://www.target.com.au/medias/static_content/product/images/full/21/85/A1312185.jpg?impolicy=desktop_hero',
         description: "This fur vest isn't for the faint hearted as it's oozing with standout style. Team with jeans, boots and sunglasses to complete their new cool weather look!",
         images: [
@@ -186,7 +186,7 @@ export default class Search extends Component {
         ]
       },
       {
-        id: 22, title: 'Women Sweaters', categoryId: 2, categoryTitle: 'WOMEN', price: '$66',
+        id: 22, title: 'Women Sweaters', categoryId: 2, categoryTitle: 'WOMEN', price: '66',
         image: 'https://img.chiccdn.com/thumb/large/oaupload/yoins/images/AB/CE/333bf55f-90e6-478d-9a84-3115639f0beb.jpeg',
         description: "Summer nights often call for a little sweater, and this is most definitely it. \n-Front button closure  \n-Collarless  \n-75% pima cotton, 25% viscose  \n-Machine wash, dry flat",
         images: [
@@ -205,7 +205,7 @@ export default class Search extends Component {
 
       },
       {
-        id: 100, title: 'Belt', categoryId: 1, categoryTitle: 'MEN', price: '$45',
+        id: 100, title: 'Belt', categoryId: 1, categoryTitle: 'MEN', price: '45',
         image: 'https://www.ties.com/blog/wp-content/uploads/2016/11/mens_dress_belts_01.jpg',
         description: "Handcrafted in Australia from genuine leather, and lined for additional strength, the Belt is designed to last. An effortless way to put a smart finish on any look, the smooth black design is completed with a silver pin buckle.",
         images: [
@@ -223,7 +223,7 @@ export default class Search extends Component {
         ]
       },
       {
-        id: 12, title: 'Women Sandal', categoryId: 5, categoryTitle: 'WOMEN', price: '$30',
+        id: 12, title: 'Women Sandal', categoryId: 5, categoryTitle: 'WOMEN', price: '30',
         image: 'http://www.famousfootwear.com.au/media/products/LPGETAWAY.BLK_1.jpg',
         description: "Flat sandal featuring two buckled straps and a cork effect footbed. Perfect for café catch ups with the girls, team Getaway with a fun floral dress and denim jacket for your next coffee date.",
         images: [
@@ -242,7 +242,7 @@ export default class Search extends Component {
         ]
       },
       {
-        id: 29, title: 'Tommy T-Shirt', categoryId: 2, categoryTitle: 'Men', price: '$55',
+        id: 29, title: 'Tommy T-Shirt', categoryId: 2, categoryTitle: 'Men', price: '55',
         image: 'https://img1.theiconic.com.au/KYj4d5HWcd1tSWiZ-akfHGh6Kvs=/fit-in/1000x0/filters:fill(ffffff):quality(85):format(webp)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Ftommy-hilfiger-8392-789326-1.jpg',
         description: "One of the world’s leading designer lifestyle brands, Tommy Hilfiger is the essence of classic American style. Hilfiger’s signature collection was introduced in the mid-‘80s, showcasing time-honoured staples including button-up shirts, chinos and knits expertly modernised with updated fits and details. Recognised internationally for its iconic red, white and blue flag logo, the brand’s relaxed and youthful attitude has remained a distinctive hallmark throughout their collections.",
         images: [
@@ -260,7 +260,7 @@ export default class Search extends Component {
         ]
       },
       {
-        id: 16, title: 'Kids Caps', categoryId: 1, categoryTitle: 'MEN', price: '$25',
+        id: 16, title: 'Kids Caps', categoryId: 1, categoryTitle: 'MEN', price: '25',
         image: 'https://ae01.alicdn.com/kf/HTB1GOj8MpXXXXXFXpXXq6xXFXXX4/Anime-God-stole-Dad-kids-Cap-European-American-Cap-Children-cap-yellow-Snapback-Hip-hop-Caps.jpg_640x640.jpg',
         description: "Different types of caps for your kids    \n-Fortnite  \n-Spiderman    \n-Batman",
         images: [

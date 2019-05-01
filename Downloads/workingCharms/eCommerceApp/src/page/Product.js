@@ -336,7 +336,7 @@ export default class Product extends Component {
 const similars = {
   similarItems: [
     {
-      id: 80, title: 'iPhone Leather Case', categoryId: 5, categoryTitle: 'ACCESSORIES', price: '45',
+      id: 80, title: 'iPhone Leather Cases', categoryId: 5, categoryTitle: 'ACCESSORIES', price: '45',
       image: 'https://cdn.vox-cdn.com/thumbor/UbagzVOEwy-fnq3WA5Y0wzxtsoI=/0x0:2040x1360/1220x813/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/57892395/akrales_171129_2162_0112.0.jpg',
       description: 'Premium leather design – this product is a real designer piece – The finest leather styles makes our case to a real eyecatcher and makes it stand out in a crowd. Combine it also with our Apple Watch Straps in the same design. \n \nHigh-quality genuine leather , elegant design and a perfect all-round protection for your Apple iPhones ',
       images: [
@@ -351,7 +351,7 @@ const similars = {
 
     },
     {
-      id: 81, title: 'Hoodie', categoryId: 2, categoryTitle: 'MEN', price: '99',
+      id: 81, title: 'Hoodies', categoryId: 2, categoryTitle: 'MEN', price: '99',
       image: 'https://img1.theiconic.com.au/cmN1dj4xRLZT_Y9nvAmK3C8zMDE=/fit-in/1000x0/filters:fill(ffffff):quality(85):format(webp)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Fchampion-life-5331-649328-1.jpg',
       description: "Bering Max Rene 32mm Silicon Strap Polished Case, Strap, 50 meter Water Resistant with Saphire Crystal Glass \n-Kangaroo pouch \n-Long sleeves \n-Logo appliques to cuffs and chest ",
       images: [
@@ -364,7 +364,7 @@ const similars = {
       category: 'MEN',
     },
     {
-      id: 82, title: 'Women Jeans', categoryId: 1, categoryTitle: 'WOMEN', price: '82',
+      id: 82, title: 'Womens Jean', categoryId: 1, categoryTitle: 'WOMEN', price: '82',
       image: 'https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw8760b72e/product_images/0860103680289NEW_00_349.jpg?sw=458&sh=710&sm=fit',
       description: 'The Mid Licks Jean are skinny jeans made of stretch denim fabrication in a jet black wash. These jeans feature a mid-rise that sits just below the belly button, five pockets, woven tag at the back as well as a leather patch.',
       images: [
